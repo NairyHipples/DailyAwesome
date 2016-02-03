@@ -12,10 +12,9 @@ $(document).ready(function() {
         q: encodeURIComponent($("#search").val()).replace(/%20/g, "+"),
         maxResults: videoResults,
         order: 'viewCount',
-        publishedAfter: '2000-01-01T00:00:00Z',
+        publishedAfter: '2016-01-01T00:00:00Z',
         key: 'AIzaSyAEWYyHq1Tf8XR1sTJtC1Skgv8xAWzvF9s'},
         function(data){
-          
           var output;
           console.log(data);
           $.each(data.items, function(i, item) {

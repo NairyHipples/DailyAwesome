@@ -34,6 +34,7 @@ $(document).ready(function() {
             console.log(item);
             var videoTitle = item.snippet.title;
             var videoId = item.snippet.resourceId.videoId;
+            console.log(videoId);
             output = '<li><iframe class="videoBox" src=\"//www.youtube.com/embed/'+videoId+'\"></iframe></li>';
 
             //Append to the results list

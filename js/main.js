@@ -1,10 +1,11 @@
-var videoResults = 3;
+var videoResults = 1;
 
 
 $(document).ready(function() {
   $('form').on('submit', function(e){
 
     e.preventDefault();
+    console.log(1);
     $.get(
       "https://www.googleapis.com/youtube/v3/search",{
         part: 'snippet',

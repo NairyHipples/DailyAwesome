@@ -1,5 +1,8 @@
 var channelName = 'TechGuyWeb';
 var videoResults = 10;
+var vidWidth = 640;
+var vidHeight = 360;
+
 $(document).ready(function() {
   $.get(
     "https://www.googleapis.com/youtube/v3/channels",{
@@ -31,7 +34,7 @@ $(document).ready(function() {
             console.log(item);
             var videoTitle = item.snippet.title;
             var videoId = item.snippet.resourceId.videoId;
-            output = '<li><iframe src="//www.youtube.com/embed/'+videoId+'"></iframe></li>';
+            output = '<li><iframe height="'+vidHeight+'" width="'+vidWidth+'" src=\"//www.youtube.com/embed/'+videoId+'\"></iframe></li>';
 
             //Append to the results list
             $('#results').append(output);

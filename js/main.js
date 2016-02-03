@@ -30,14 +30,14 @@ $(document).ready(function() {
           $.each(data.items, function(i, item) {
             console.log(item);
             var videoTitle = item.snippet.title;
-
-            output = '<li>'+videoTitle+'</li>';
+            var videoId = item.snippet.resourceId.videoId;
+            output = '<li><iframe src="//www.youtube.com/embed/'+videoId+'"></iframe></li>';
 
             //Append to the results list
             $('#results').append(output);
           });
         }
     );
-  
+
   }
 });

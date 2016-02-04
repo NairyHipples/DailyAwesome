@@ -1,13 +1,30 @@
 /* CSS VALIDATED */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,400italic);
+/*for sticky footer*/
+* {
+margin: 0;
+}
+html {
+  height: 100%;
+}
+/*body*/
 body {
+  height: 100%;
   min-width: 800px;
   font-family: 'Roboto', sans-serif;
   background: #f4f4f4;
   font-size: 20px;
   color:#666;
 }
+/*for sticky footer*/
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+/*section of general*/
 li {
   list-style-type: none;
   padding: 0px 20px 0px 20px;
@@ -18,19 +35,18 @@ p {
 img {
   width: 640px;
 }
+/*bootstrap container*/
 .container {
-  margin: auto;
-  overflow: auto;
+  padding: 0;
   background: #fff;
   box-shadow: 0px 5px 15px #888;
 }
+/*own custom class*/
 .page-top {
-
   margin-bottom: 30px;
   text-align: center;
-
 }
-
+/*logo section id's*/
 #logo {
   width: 50px;
   height: auto;
@@ -41,10 +57,11 @@ img {
   display: inline-block;
   font-size: 50px;
 }
-
+/*search field*/
 .searchField {
   padding: 0px 200px 0px 200px;
 }
+/*id's for the UL the videos and pictures show up in*/
 #vidResults {
   display: none;
   padding: 0px;
@@ -53,45 +70,53 @@ img {
   display: none;
   padding: 0px;
 }
-
-.videosTab, .picturesTab {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: none;
-}
-
+/*the menu buttons*/
 .videosClick, .picturesClick {
   background-color: #239654;
   color: #32D979;
   text-align: center;
   cursor: pointer;
   transition: background-color .2s ease-out, color .2s ease-out;
-
-
 }
-
 .videosClick:hover, .picturesClick:hover {
   background-color: #27ae60;
   color: #45E689;
 }
-
+/*the sections that video and picture result are displayed in*/
+.videosTab, .picturesTab {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: none;
+}
+/*active class for the selected menu button*/
 .active {
   background: #2ecc71;
   box-shadow: 0px 3px 10px #888;
   color: #239654;
 }
+/*the box that the youtube video is put into*/
 .videoBox {
   width: 640px;
   height: 360px;
   text-align: center;
 }
-
+/*centering the iframe box. avoiding usage of deprecated SVG's SMIL styling*/
 .iframebox {
   text-align: center;
 }
-
+/*the small filler text that tells you what you should do*/
 .backgroundText {
   text-align: center;
   margin-top: 50px;
   color: #B0B0B0;
+}
+/*for sticky footer*/
+.footer, .push {
+  height: 4em;
+}
+/*actual footer styling*/
+.footer {
+  padding-top: 15.5px;
+  border-top: 10px solid #239654;
+  text-align: center;
 }

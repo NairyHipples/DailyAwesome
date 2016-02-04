@@ -37,7 +37,8 @@ $(document).ready(function() {
             $('.videosTab').show();
             $('#vidResults').show();
             $('.videosClick').addClass('active');
-
+            search.prop("disabled", false);
+            submitter.attr("disabled", false).val("Search...");
           });
         }
       );

@@ -6,8 +6,8 @@ $(document).ready(function() {
     //Prevent form from reloading page
     e.preventDefault();
 
-    $('#submit').prop("disabled", true);
-    $('#search').attr("disabled", true).val("Searching...");
+    // $('#submit').prop("disabled", true);
+    // $('#search').attr("disabled", true).val("Searching...");
     //Open request
     $.get(
       "https://www.googleapis.com/youtube/v3/search",{
@@ -38,8 +38,8 @@ $(document).ready(function() {
             $('.picturesClick').removeClass('active');
             $('.videosClick').addClass('active');
           });
-          $('#search').prop("disabled", false).val("");
-          $('#submit').attr("disabled", false);
+          // $('#search').prop("disabled", false).val("");
+          // $('#submit').attr("disabled", false);
         }
       );
     }); //end video request

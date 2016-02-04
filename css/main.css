@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,400italic);
 body {
+  min-width: 800px;
   font-family: 'Roboto', sans-serif;
   background: #f4f4f4;
   font-size: 20px;
@@ -23,6 +24,7 @@ img {
   box-shadow: 0px 5px 15px #888;
 }
 .page-top {
+
   margin-bottom: 30px;
   text-align: center;
 
@@ -38,6 +40,7 @@ img {
   display: inline-block;
   font-size: 50px;
 }
+
 .searchField {
   padding: 0px 200px 0px 200px;
 }
@@ -49,7 +52,9 @@ img {
   display: none;
   padding: 0px;
 }
-
+.row {
+  min-width: 800px;
+}
 .videosTab, .picturesTab {
   margin-top: 30px;
   margin-bottom: 30px;

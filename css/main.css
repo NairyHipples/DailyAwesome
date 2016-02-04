@@ -1,7 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,400italic);
 body {
+  font-family: 'Roboto', sans-serif;
   background: #f4f4f4;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   color:#666;
 }
 li {
@@ -11,13 +12,71 @@ p {
   font-size: 24px;
 }
 
-#container {
+.container {
   width: 800px;
   margin: auto;
   overflow: auto;
   background: #fff;
+  box-shadow: 0px 5px 15px #888;
+}
+.page-top {
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 25.5px;
+}
+#logotext {
+  display: inline-block;
+  font-size: 50px;
+}
+.searchField {
+  padding: 0px 200px 0px 200px;
+}
+#vidResults {
+  display: none;
+}
+#picResults {
+  display: none;
+}
+
+.videosTab, .picturesTab {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.videosClick, .picturesClick {
+  background-color: #239654;
+  color: #32D979;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .2s ease-out, color .2s ease-out;
+
+}
+
+.videosClick:hover, .picturesClick:hover {
+  background-color: #27ae60;
+  color: #45E689;
+}
+
+.active {
+  background: #2ecc71;
+  box-shadow: 0px 3px 10px #888;
+  color: #239654;
 }
 .videoBox {
   width: 640px;
   height: 360px;
+}
+
+.backgroundText {
+  text-align: center;
+  margin-top: 50px;
+  color: #B0B0B0;
 }

@@ -26,15 +26,38 @@ $(document).ready(function() {
             var videoTitle = item.snippet.title;
             var videoId = item.id.videoId;
             console.log(videoId);
-            output = '<li><p>'+videoTitle+'</p><iframe class="videoBox" src=\"//www.youtube.com/embed/'+videoId+'\"></iframe></li>';
+            output = '<li><p><strong>Title: </strong>'+videoTitle+'</p><iframe class="videoBox" src=\"//www.youtube.com/embed/'+videoId+'\"></iframe></li>';
 
             //Append to the results list
             $('#vidResults').append(output);
           });
         }
       );
+    });
+
+    $('.videosClick').on('click', function() {
+      if ($('.picturesClick').hasClass('active')) {
+        $('.picturesClick').removeClass('active');
+      }
+      $(this).addClass('active');
+
+      $('#picResults').hide();
+      $('#vidResults').show();
+      $('.videosTab').show();
 
     });
+    $('.picturesClick').on('click', function() {
+      if ($('.videosClick').hasClass('active')) {
+        $('.videosClick').removeClass('active');
+      }
+      $(this).addClass('active');
+
+      $('#vidResults').hide();
+      $('#picResults').show();
+      $('.picturesTab').show();
+    });
+
+
   }); // DOM ready
 
   // //First function

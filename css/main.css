@@ -7,11 +7,14 @@ body {
 }
 li {
   list-style-type: none;
+  padding: 0px 20px 0px 20px;
 }
 p {
   font-size: 24px;
 }
-
+img {
+  width: 640px;
+}
 .container {
   width: 800px;
   margin: auto;
@@ -40,9 +43,11 @@ p {
 }
 #vidResults {
   display: none;
+  padding: 0px;
 }
 #picResults {
   display: none;
+  padding: 0px;
 }
 
 .videosTab, .picturesTab {
@@ -73,6 +78,11 @@ p {
 .videoBox {
   width: 640px;
   height: 360px;
+  text-align: center;
+}
+
+.iframebox {
+  text-align: center;
 }
 
 .backgroundText {

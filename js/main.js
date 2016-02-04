@@ -47,6 +47,8 @@ $(document).ready(function() {
     $('form').on('submit', function(e) {
       e.preventDefault();
 
+      submitter.prop("disabled", true);
+      search.attr("disabled", true).val("Searching...");
       //ajax
       var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
       var flickrOptions = {
